@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: blanchedalmond ;
+   background-size: auto 100vh;
+   font-family: Arial;
+   height: 100vh;
+   font-size: 12px;
+
+}
+
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+}
+#menu{
+    background-color: white;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#menu ul{
+    display: flex;
+    justify-content: space-around;   
+}
+#menu li{
+    list-style: none;
+}
+#menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+#menu a:hover{
+    background-color: teal;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+.site-title{
+    text-align: center;
+    color: black;
+}
+.site-title{
+    padding: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8em;
+}
+
+.Sobre,
+.Contato,
+.Portfólio{
+    padding: 3em;
+    min-height: 50vh;
+  
+}
+
+@media (min-width: 1200px){
+    .Sobre,
+    .Contato,
+    .Portfólio{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+.Sobre h2,
+.Contato h2,
+.Portfólio h2{
+    font-family: 'Special Elite', cursive;
+    margin-bottom: 1em;   
+}
+.Sobre p{
+    color: black;
+    text-indent: 1.4em ;
+    margin-bottom: 1.4em;
+    text-align: justify;
+}
+
+.Portfólio .grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .Portfólio .grid{
+        grid-template-columns: repeat(3, 180px);
+    }
+
+}
+
+@media (min-width: 880px) {
+    .Portfólio .grid{
+        grid-template-columns: repeat(3, 180px);
+        justify-content: center;
+    }
+
+}
+.Portfólio figure{
+    text-align: center;
+}
+#Bea{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+#BP{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+#datriz{
+    height: 180px;
+    width: 180px;
+    object-position: left bottom;
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+#Londres{
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+
+.Sobre .avatar{
+    float: right;
+    margin-left: 2em;
+}
+
+#Bea:hover{
+    transform: scale(1.2);
+}
+#BP:hover{
+    transform: scale(1.2);
+}
+#datriz:hover{
+    transform: scale(1.2);
+}
+
+.Contato a{
+    color:rgb(238, 138, 6); 
+    font-size: 2em;
+}
+.Contato .icons{
+    text-align: center;
+    font-size: 3em;
+}
+.Contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(238, 138, 6, 0.5);
+}
+ .rodape-pagina{
+	padding: 10px;
+    background-color: #000;
+    color: #F2FFFC;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
